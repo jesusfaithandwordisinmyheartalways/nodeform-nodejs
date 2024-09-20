@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodejs User Form</title>
+    <link rel="stylesheet" href="./public/style/form.css">
+</head>
+
+
+
+<body >
+
+
+
+        <div class="form-container">
+            <form action="/contact" method="POST" class="User-Form" id="user-form" name="userForm">
+                <div><label for="username">Username</label></div>
+                <div><input type="text" name="username" class="username" id="username" placeholder="username" aria-label="username" required></div>
+                <div><label for="password">Password</label></div>
+                <div><input type="password" name="password" class="password" placeholder="password" aria-label="password" required></div>
+                <div><label for="confirm-password">Confirm Password</label></div>
+                <div><input type="password" name="confirm-password" class="confirm-password" placeholder="confirm password" aria-label="confirm-password" required></div>
+                <div><label for="email">Email</label></div>
+                <div><input type="email" name="email" class="email" placeholder="email" aria-label="email" required></div>
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+
+        
+
+        <script>
+
+                window.addEventListener('DOMContentLoaded', () => {
+                  const form =   document.getElementById('user-form')
+                  if(form) {
+                    form.reset();
+                    document.userForm.username.focus()
+                  }
+                 
+                })
+
+
+
+
+        </script>
+
+
+    
+</body>
+</html>
